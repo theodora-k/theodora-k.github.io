@@ -31,12 +31,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <script>
-       function onSubmit(token) {
-         document.getElementById("contactForm").submit();
-       }
-     </script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 
   <link rel="shortcut icon" href="assets/images/ico/favicon.png">
@@ -668,7 +663,7 @@
           <div class="col-md-6">
             <div class="contact-form">
               <strong>Available for new opportunities, freelance projects & consulting </strong>
-              <form name="contact-form" id="contactForm" action="https://formspree.io/xknzzqoo" method="POST">
+              <form name="contact-form" id="contactForm" action="https://smartforms.dev/submit/5f3fcaeab81854118fd3d084" method="POST">
 
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -689,8 +684,8 @@
                   <label for="message">Message</label>
                   <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
                 </div>
-
-                <button type="submit" name="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LfanqUZAAAAALCcTqpKJT5qfU1K3AZUJQGvvoaQ" data-callback='onSubmit' >Send Message</button>
+                <div class="g-recaptcha" data-sitekey="6LfanqUZAAAAALCcTqpKJT5qfU1K3AZUJQGvvoaQ"></div>
+                <button type="submit">Send Message</button>
               </form>
             </div><!-- /.contact-form -->
           </div><!-- /.col-md-6 -->
